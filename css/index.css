@@ -1,0 +1,431 @@
+﻿body, html {
+    font-family: "Microsoft YaHei";
+    background: #fff;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+select, textarea, input { /*解决表单宽度不一致的问题*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none
+}
+
+address, caption, cite, code, em, figcaption, h1, h2, h3, h4, h5, h6, p, pre, strong, th {
+    font-weight: 400;
+    font-style: normal;
+}
+
+dd, dl, dt, li, ul {
+    list-style: none;
+}
+
+fieldset, iframe, img {
+    border: 0;
+}
+
+img {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, nav, section, video {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+input, select {
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+input[type=text] {
+    background-position-y: -1px;
+}
+
+input[type=radio] {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+address, cite, em, var {
+    font-style: normal;
+}
+
+.clearFix:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.clearFix {
+    zoom: 1
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.box {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+.inner{
+    width: 1100px;
+    margin: 0 auto;
+}
+.title{
+    width: 850px;
+    margin: 0 auto;
+    height: 91px;
+    line-height: 91px;
+    text-align: center;
+    font-size: 34px;
+    color: #3369a6;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+h2 span{
+    color: #d51719;
+}
+
+/* --------------------------------------  header start --------------------------------------  */
+.header{
+    height: 118px;
+}
+.header .left{
+    margin:26px 0 0 21px;
+}
+.header .left h1{
+    font-size: 32px;
+    color: #d51719;
+    font-weight: bold;
+}
+.header .left p{
+    font-size: 16px;
+    color: #666;
+}
+.header .right a{
+    margin-right: 21px;
+    height: 118px;
+    line-height: 118px;
+    font-size: 18px;
+    color: #3369a6;
+    font-weight: bold;
+}
+/* --------------------------------------  header end --------------------------------------  */
+
+
+/* --------------------------------------  p1 start --------------------------------------  */
+.p1{
+    width: 100%;
+    background: -webkit-linear-gradient(top, #d7e4f1 , #fff);
+    background: -o-linear-gradient(bottom, #d7e4f1 , #fff);
+    background: -moz-linear-gradient(bottom, #d7e4f1 , #fff);
+    background: linear-gradient(to bottom, #d7e4f1 , #fff);
+}
+.p1 .tab-menu{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #3369a6;
+}
+.p1 .tab-menu ul{
+    display: flex;
+}
+.p1 .tab-menu ul li a{
+    flex-direction: row;
+    flex-grow: 1;
+    display: block;
+    width: 136px;
+    height: 40px;
+    line-height: 40px;
+    border-right: 1px solid #fff;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.p1 .tab-menu ul li:last-of-type a{
+    border-right: none;
+}
+.p1 .tab-menu ul li a:hover{
+    background: #0f509a;
+}
+.p1 .tab-menu ul li.active{
+    background: #0f509a;
+}
+
+.p1 .tab-con .con{
+    display: none;
+}
+.p1 .tab-con .con1{
+    display: block;
+}
+
+.form-con{
+    width: 420px;
+    margin: 0 auto;
+}
+
+.form-con h3{
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+.form-con h3 .red{
+    color: #d90003;
+}
+.form-con select,
+.form-con input{
+    display: block;
+    width: 100%;
+    height: 36px;
+    line-height: 34px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #666;
+    padding-left: 13px;
+}
+.form-con select{
+    background: url("../images/select-icon.png") no-repeat 97% center;
+    background-size: 2%;
+}
+.form-con .ljcx{
+    display: block;
+    width: 428px;
+    margin: 25px auto 0;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #005293;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+}
+.form-con .ljcx:hover{
+    background: #2c5d95;
+}
+.form-con .agree{
+    margin:16px 0 23px 13px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #333;
+}
+.form-con .agree img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 9px;
+}
+.form-con .agree span{
+    color: #d90003;
+}
+.form-con .agree strong{
+    color: #3369a6;
+}
+
+/* 报考条件*/
+.bktj{
+    width: 1100px;
+    margin: 50px auto 0;
+    background: #fff;
+    padding: 9px 0 52px;
+    box-shadow: 0 0 10px 2px #d6e1ed;
+}
+.bktj .tit{
+    margin: 38px auto 23px;
+}
+
+.warm-prompt{
+    padding: 46px 48px 50px 50px;
+}
+.warm-prompt h2{
+    margin-bottom: 29px;
+    height: 59px;
+    line-height: 59px;
+    text-align: center;
+    font-size: 34px;
+    color: #3369a6;
+    font-weight: bold;
+}
+.warm-prompt p{
+    font-size: 16px;
+    color: #333;
+    line-height: 37px;
+}
+.warm-prompt p span{
+    color: #d51719;
+}
+
+/* 报考政策 */
+.bkzc{
+    width: 1100px;
+    margin: 77px auto 115px;
+    background: #fff;
+    box-shadow: 0 0 10px 2px #d6e1ed;
+    padding: 9px 0 61px;
+}
+.bkzc form{
+    margin-top: 23px;
+}
+.bkzc .fuzhu{
+    width: 655px;
+    margin: 30px auto 0;
+    font-size: 16px;
+    color: #333;
+}
+.bkzc .fuzhu h4{
+    height: 25px;
+    line-height: 25px;
+    color: #d90003;
+}
+.bkzc .fuzhu p{
+    width: 600px;
+    line-height: 25px;
+}
+
+/* 报名时间 */
+.bmsj{
+    padding-bottom: 108px;
+}
+.bmsj .fuzhu p,
+.bkfy .fuzhu p,
+.kssj .fuzhu p,
+.kskm .fuzhu p{
+    text-align: center;
+}
+.bmsj .fuzhu p span,
+.bkfy .fuzhu p span,
+.kssj .fuzhu p span,
+.kskm .fuzhu p span{
+    color: #d90003;
+}
+/* --------------------------------------  p1 end --------------------------------------  */
+
+
+
+/* --------------------------------------  footer start --------------------------------------  */
+.footer{
+    width: 100%;
+    height: 117px;
+    background: #f0f5fb;
+    padding-top: 30px;
+}
+.footer p{
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+}
+/* --------------------------------------  footer end --------------------------------------  */
+
+
+/* --------------------------------------  右侧导航 start --------------------------------------  */
+.right-nav{
+    position: fixed;
+    top: 50%;
+    /* left: 54px; */
+    right: 54px;
+    transform: translateY(-50%);
+    width: 150px;
+    background: #3369a6;
+    padding: 5px 0 10px;
+}
+.right-nav h2{
+    height: 64px;
+    line-height: 64px;
+    background: url("../images/wsbm-icon.png") no-repeat 12px center;
+    background-size: 18%;
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 46px;
+}
+.right-nav ul{
+    width: 130px;
+    margin: 0 auto;
+    background: #fff;
+}
+.right-nav ul li a{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #eee;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+.right-nav ul li a:hover{
+    color: #3369a6;
+}
+.right-nav ul li.active a{
+    color: #3369a6;
+}
+.right-nav ul li a span{
+    position: absolute;
+    top: 6px;
+    right: -18px;
+    display: block;
+    width: 30px;
+    height: 18px;
+    background: url("../images/hot.png") no-repeat;
+    background-size: 100%,100%;
+}
+/* --------------------------------------  右侧导航 end --------------------------------------  */
+
+
+/* 注册弹框 */
+.out{display: none; width: 100%; height: 100%; background: rgba(0,0,0,0.8); position: fixed; top: 0; left: 0; z-index: 40;}
+.zcTk{display: none; width: 458px; height: 300px; position: fixed; top: 50%; left: 50%; margin-left: -229px; margin-top: -150px; background: #fff; z-index: 50;}
+.zcTk .zcTkTop{width: 100%; height: 80px;}
+.zcTk .zcTkTop .tkLogo{float: left; background: #a00000; width: 78px; height: 78px;}
+.zcTk .zcTkTop .tkLogo img{margin-top: 11px; margin-left: 7px;}
+.zcTk .zcTkTop .tkTil{float: left; position: relative; width: 380px; height: 78px; background: #c90000}
+.zcTk .zcTkTop .tkTil h1{font-size: 22px; color: #fff; font-weight: normal; margin-left: 15px; margin-top: 10px;}
+.zcTk .zcTkTop .tkTil h1 p{font-size: 14px; margin-top: 5px; margin-left: 110px;}
+.zcTk .zcTkTop .tkTil a{position: absolute; top: 0; right: 0; background: url(../images/tcclosebtn.png) no-repeat;width: 26px; height: 26px;}
+.zcTk .tkBottom{background: #fff; height: 220px;}
+.zcTk .tkBottom .formCon{width: 310px; height: 220px; margin: 0 auto;padding-top: 1px}
+.zcTk .tkBottom .formCon div{width: 100%; border: 1px solid #c0c0c0; height: 38px; margin-top: 30px;}
+.zcTk .tkBottom .formCon div span{float: left; width: 82px; height: 38px; text-align: center; line-height: 38px; font-size: 16px; color: #222; font-weight: bold}
+.zcTk .tkBottom .formCon div input{width: 220px; font-size: 16px; color: #d6d5d5; height: 38px; line-height: 38px}
+.zcTk .tkBottom .formCon a{display: block; font-size: 18px; color: #fff; background: url(../images/tcbtn.png) no-repeat; width: 165px; height: 38px; text-align: center; line-height: 38px; margin: 20px auto}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        
+
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/iconfont.css" />
+    
+    </head>
+    <body>
+        <div class="footer-zy">
+            <div class="about_zy">
+                <p>地址：北京西城区西直门南大街2号2门607&nbsp;&nbsp;客服电话：400-010-0056&nbsp;&nbsp;京ICP备19059287号</p>
+                <p class="foot_p"><span class="online_change">网上交易保障中心</span><span class="beian_info">经营性网站备案信息</span><span class="zhifubao_pic">支付宝</span></p>
+                <p>北京中未教育科技有限公司 &copy;版权所有&nbsp;<a href="/news_skin/images/banxue.jpg" target="_blank" style="color:#000;">营业执照</a></p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var parentHTML=window.parent.document.body.innerHTML;
+            var gstartNum=parentHTML.indexOf("'g=");
+            
+            if(gstartNum!=-1){
+                var gID=parentHTML.slice(gstartNum+3,gstartNum+11);
+            }else{
+                gstartNum=parentHTML.indexOf("g=");
+                var gID=parentHTML.slice(gstartNum+2,gstartNum+10);
+            }       
+            function ts24(){
+                window.parent.doyoo.util.openChat("'g="+gID+"'");return false;
+            }
+        </script>
+    </body>
+</html>
